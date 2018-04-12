@@ -25,7 +25,7 @@ function initialize() {
 
 			pontoPadrao = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 			map.setCenter(pontoPadrao);
-			map.setZoom(8);
+			map.setZoom(15);
 			
 			geocoder.geocode({
 				"location": new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
