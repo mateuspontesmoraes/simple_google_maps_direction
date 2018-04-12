@@ -1,0 +1,14 @@
+{
+  "name": "googlemaps",
+  "version": "1.0.0",
+  "description": "Google Maps API v3: Criando rotas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
