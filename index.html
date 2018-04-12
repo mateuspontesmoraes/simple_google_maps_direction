@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Google Maps API </title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    </head>
+ 
+    <body>
+    	<div id="site">        
+            <form method="post" action="index.html">
+                <fieldset>
+                    <legend>Criar rotas</legend>
+                    
+                    <div>
+                        <label for="txtEnderecoPartida">Endereço de partida:</label>
+                        <input type="text" id="txtEnderecoPartida" name="txtEnderecoPartida" />
+                    </div>
+
+                    <div>
+                        <label style="color:red">Pontos de Parada: (clique no mapa para adicionar)</label>
+                        <div id="containerWayPoints"></div>
+                        <span id="lblTotalParadas"></span>
+                    </div>
+                    
+                    <div>
+                        <label for="txtEnderecoChegada">Endereço de chegada:</label>
+                        <input type="text" id="txtEnderecoChegada" name="txtEnderecoChegada" />
+                    </div>
+                    
+                    <div>
+                        <input type="submit" id="btnEnviar" name="btnEnviar" value="Enviar" />
+                    </div>
+                </fieldset>
+            </form>
+        
+            <div id="mapa"></div>
+            
+            <div id="trajeto-texto"></div>
+        
+        </div>
+        
+        <script src="js/jquery.min.js"></script>
+		
+        <!-- Maps API Javascript -->
+        <script src="https://maps.googleapis.com/maps/api/js?client=gme-cvsservicosdeinformatica&amp;"></script>
+ 
+        <!-- Arquivo de inicialização do mapa -->
+		<script src="js/mapa.js"></script>
+    </body>
+</html>
